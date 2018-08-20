@@ -1,0 +1,13 @@
+{
+  "Hotel": {
+    "port": 3001,
+    "type": "tcp",
+    "pin": "role:Hotel"
+  },
+  "Database": {
+    "host": "localhost",
+    "port": 27017,
+    "db": "almundo"
+  }
+    
+}

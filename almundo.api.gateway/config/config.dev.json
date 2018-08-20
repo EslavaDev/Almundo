@@ -1,0 +1,11 @@
+{
+  "Hotel": {
+    "port": 3001,
+    "type": "tcp",
+    "pin": "role:Hotel"
+  },
+  "Server":{
+    "port": 3000,
+    "host": "127.0.0.1"
+    }
+}

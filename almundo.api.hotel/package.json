@@ -1,0 +1,27 @@
+{
+  "name": "almundo.api.hotel",
+  "version": "1.0.0",
+  "description": "api created in SenecaJS orientated on microservices",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EslavaDev/Almundo-prueba.git"
+  },
+  "keywords": [
+    "Almundo"
+  ],
+  "author": "EslavaDev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EslavaDev/Almundo-prueba/issues"
+  },
+  "homepage": "https://github.com/EslavaDev/Almundo-prueba#readme",
+  "dependencies": {
+    "mongoose": "^5.2.9",
+    "nconf": "^0.10.0",
+    "seneca": "^3.7.0"
+  }
+}

@@ -1,0 +1,19 @@
+.bgfiltro {
+    background-color: white;
+}
+.excelent {
+    color: orange;
+}
+.vl {
+    border: 1px solid #f4f4f4;
+    height: auto;
+    margin-left: 10px;
+}
+
+
+.container-menu {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    width: 100%;
+}

@@ -1,0 +1,33 @@
+{
+  "name": "almundo.api.gateway",
+  "version": "1.0.0",
+  "description": "gateway created in HapiJS ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EslavaDev/Almundo-prueba.git"
+  },
+  "keywords": [
+    "Almundo"
+  ],
+  "author": "EslavaDev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EslavaDev/Almundo-prueba/issues"
+  },
+  "homepage": "https://github.com/EslavaDev/Almundo-prueba#readme",
+  "dependencies": {
+    "boom": "^7.2.0",
+    "chairo": "^4.0.0",
+    "hapi": "^17.5.3",
+    "hapi-swagger": "^9.1.1",
+    "inert": "^5.1.0",
+    "joi": "^13.6.0",
+    "nconf": "^0.10.0",
+    "swagger": "^0.7.5",
+    "vision": "^5.3.3"
+  }
+}
