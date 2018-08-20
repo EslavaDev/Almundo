@@ -63,4 +63,19 @@ module.exports = class Controller{
       throw (error)
     }
   }
+  async remove(id,reply){ 
+    try{
+      return await Hotel.findByIdAndRemove(id,async (err,remove)=> {
+        if(err) {
+            throw new Error({status: 404, message: `Failed to remove the hotel. Error: ${err}`});
+
+        }
+            reply(null, {status:200, message: "remove successfully.", data:remove});
+          
+         
+  });
+    }catch(error){
+      throw (error)
+    }
+  }
 }

@@ -76,7 +76,7 @@ const updateOptions={
     "image":"String",
     "amenities":"[String]"
   }`,
-  description: "use this metod for created a Hotel",
+  description: "use this metod for update a Hotel",
   validate:{
     params:Joi.object().keys({
       id:Joi.string().required().label('id')
@@ -105,9 +105,28 @@ plugins:{
 
 }
 
+const removeOptions={
+
+    cors:true,
+    description: "use this metod for remove a Hotel",
+    validate:{
+      params:Joi.object().keys({
+        id:Joi.string().required().label('id')
+      }).label('params'),
+  },
+  plugins:{
+      'hapi-swagger':{
+          payloadType: 'json'
+      }
+  },
+    tags:["api","hotel"]
+  
+  }
+
 module.exports = {
     fetchAllOptions,
     findByIdOption,
     saveOptions,
-    updateOptions
+    updateOptions,
+    removeOptions
 }

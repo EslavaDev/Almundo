@@ -37,8 +37,8 @@ module.exports = function Actions(options) {
 
   this.add("role:Hotel, cmd:remove",  async (msg, reply) => {
     try{
-      let data = msg.params;
-      return await HotelController.save(data,reply)
+      let id = msg.payload.id;
+      return await HotelController.remove(id,reply)
     }catch(err){
       reply(err)
     }

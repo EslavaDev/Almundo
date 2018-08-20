@@ -29,8 +29,21 @@ async function update(req, reply){
   })
 }
 
+async function remove(req, reply){
+  console.log(req.params)
+  let payload={
+    id:req.params.id
+  }
+  return reply.act({
+    role: "Hotel",
+    cmd: "remove",
+    payload: payload
+  })
+}
+
 module.exports = {
   save,
   update,
-  fetchAll
+  fetchAll,
+  remove
 }

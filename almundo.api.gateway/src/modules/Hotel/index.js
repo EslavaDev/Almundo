@@ -1,6 +1,6 @@
 //HOTELS
-const {fetchAllOptions, saveOptions, updateOptions} =require('./Options');
-const {fetchAll, save, update} = require('./Controllers');
+const {fetchAllOptions, saveOptions, updateOptions, removeOptions} =require('./Options');
+const {fetchAll, save, update, remove} = require('./Controllers');
 module.exports.Init = function(server, ...params){
     console.log(`the module Urgents is loaded`);
 
@@ -21,8 +21,15 @@ module.exports.Init = function(server, ...params){
     server.route({
       options: updateOptions,
       path: "/api/v1/hotel/update/{id}",
-      method: "POST",
+      method: "PUT",
       handler: update
+    })
+
+    server.route({
+      options: removeOptions,
+      path: "/api/v1/hotel/remove/{id}",
+      method: "DELETE",
+      handler: remove
     })
 
 
