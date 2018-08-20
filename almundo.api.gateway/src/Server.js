@@ -16,10 +16,12 @@ module.exports.Init = async function(config){
     port: config.port,
     host: config.host
   });
+  console.log(path.join(__dirname,'../build'))
   await server.register([
     Vision,
     Inert
   ]);
+
 
   await server.register({
     plugin: HapiSwagger,
@@ -28,6 +30,21 @@ module.exports.Init = async function(config){
   await server.register(chairo);
   server.seneca.
   client(getMicroServiceHotel())
+
+
+   await server.route({
+      method: 'GET',
+      path: '/{path*}',
+      handler: {
+        directory: {
+          path: path.join(__dirname, '../build'),
+          listing: false,
+          index: true
+        }
+      }
+  });
+
+
 
 
 let modulesPath = path.join(__dirname, "modules");
