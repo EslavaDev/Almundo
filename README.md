@@ -61,7 +61,7 @@ remove: *http://127.0.0.1:3000/api/v1/hotel/remove/{id}*
 
 hay dos formas de acceder al front: 
 
- 1. mediante el servidor de produccion : *http://127.0.0.1:3002*
+ 1. mediante el servidor de desarrollo : *http://127.0.0.1:3002*
  2. mediante el build ofuscado que inicializa el gateway: *http://127.0.0.1:3000/*
 ## Swagger
 
